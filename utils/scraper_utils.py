@@ -40,7 +40,7 @@ def get_llm_strategy() -> LLMExtractionStrategy:
     return LLMExtractionStrategy(
         provider="groq/deepseek-r1-distill-llama-70b",  # Name of the LLM provider
         #api_token=os.getenv("GROQ_API_KEY"),  # API token for authentication
-        api_token="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",
+        api_token="{YOUR API TOKEN HERE}",
         schema=Movie.model_json_schema(),  # JSON schema of the data model
         extraction_type="schema",  # Type of extraction to perform
         instruction=(
